@@ -1,0 +1,341 @@
+/* =========================
+   SKILL ANALYSIS
+========================= */
+
+.analysis-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 7%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.analysis-header {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.analysis-header h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.analysis-header h1 span {
+    color: #6366f1;
+}
+
+.analysis-header > p:last-child {
+    color: #686e80;
+    font-size: 17px;
+}
+
+
+/* =========================
+   INPUT CARD
+========================= */
+
+.analysis-input-card {
+    background: #ffffff;
+    border: 1px solid #e5e6ed;
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    border: 1px solid #dfe1e8;
+    border-radius: 9px;
+    padding: 14px;
+    background: #ffffff;
+    color: #151827;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #6366f1;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.input-group small {
+    display: block;
+    margin-top: 7px;
+    color: #858a98;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESULTS
+========================= */
+
+.analysis-results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   READINESS
+========================= */
+
+.readiness-card {
+    background: #151827;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.readiness-card .card-label {
+    color: #a5a7ff;
+}
+
+.readiness-card h2 {
+    font-size: 65px;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+.readiness-card p:last-child {
+    color: #b8bac5;
+}
+
+
+/* =========================
+   RESULT GRID
+========================= */
+
+.skills-result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.result-card {
+    background: #ffffff;
+    border: 1px solid #e5e6ed;
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 300px;
+}
+
+.result-card h2 {
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   SKILL TAGS
+========================= */
+
+.skill-result-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 7px;
+    background: #f0f1f6;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.matched-tag {
+    background: #e9f7ef;
+}
+
+.missing-tag {
+    background: #fff1f1;
+}
+
+.empty-result {
+    color: #858a98;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RECOMMENDATION
+========================= */
+
+.recommendation-card {
+    background: #ffffff;
+    border: 1px solid #e5e6ed;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.recommendation-card h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.recommendation-card p:last-child {
+    color: #686e80;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.analysis-input-card .primary-btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+    .analysis-container {
+        padding: 50px 5%;
+    }
+
+    .analysis-input-card,
+    .result-card,
+    .readiness-card,
+    .recommendation-card {
+        padding: 24px;
+    }
+
+    .skills-result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .readiness-card h2 {
+        font-size: 52px;
+    }
+}
+/* =========================
+   SKILL GAP PRIORITY
+========================= */
+
+.priority-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.priority-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #ececf1;
+    border-radius: 9px;
+    background: #ffffff;
+}
+
+.priority-number {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f0f1f6;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.priority-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.priority-info strong {
+    font-size: 14px;
+}
+
+.priority-info span {
+    color: #6366f1;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.priority-count {
+    color: #777c8b;
+    font-size: 11px;
+    white-space: nowrap;
+}
+/* =========================
+   SKILL MATCH CHART
+========================= */
+
+.chart-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 24px;
+}
+
+.chart-card h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.chart-description {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 320px;
+    margin: 0 auto;
+}
+/* =========================
+   MARKET DEMAND CHART
+========================= */
+
+.demand-chart-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}

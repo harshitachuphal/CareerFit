@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerFit | Roadmap</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/roadmap.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            CareerFit
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="skill-analysis.html">Skill Analysis</a>
+            <a href="career-switch.html">Career Switch</a>
+            <a href="roadmap.html">Roadmap</a>
+        </nav>
+
+    </header>
+
+
+    <main class="roadmap-container">
+
+        <!-- Header -->
+        <section class="roadmap-header">
+
+            <p class="page-label">
+                PERSONALIZED ROADMAP
+            </p>
+
+            <h1>
+                Your path to
+                <span>career readiness.</span>
+            </h1>
+
+            <p>
+                Follow a prioritized learning path based on the
+                skills demanded by your target career.
+            </p>
+
+        </section>
+
+
+        <!-- Empty State -->
+        <section
+            id="roadmapEmpty"
+            class="roadmap-empty"
+        >
+
+            <h2>
+                No roadmap generated yet.
+            </h2>
+
+            <p>
+                Complete your Skill Analysis first to generate
+                a personalized roadmap.
+            </p>
+
+            <a
+                href="skill-analysis.html"
+                class="btn primary-btn"
+            >
+                Start Skill Analysis
+            </a>
+
+        </section>
+
+
+        <!-- Roadmap -->
+        <section
+            id="roadmapContent"
+            class="roadmap-content hidden"
+        >
+
+            <div class="roadmap-summary">
+
+                <div>
+                    <p class="card-label">
+                        TARGET CAREER
+                    </p>
+
+                    <h2 id="roadmapRole">
+                        —
+                    </h2>
+                </div>
+
+                <div>
+                    <p class="card-label">
+                        SKILLS TO DEVELOP
+                    </p>
+
+                    <h2 id="roadmapSkillCount">
+                        0
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div
+                id="roadmapList"
+                class="roadmap-list"
+            >
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 CareerFit</p>
+    </footer>
+
+
+    <script src="../js/data.js"></script>
+    <script src="../js/roadmap.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>

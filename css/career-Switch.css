@@ -1,0 +1,188 @@
+/* =========================
+   CAREER SWITCH
+========================= */
+
+.switch-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 7%;
+}
+
+
+/* Header */
+
+.switch-header {
+    max-width: 780px;
+    margin-bottom: 45px;
+}
+
+.switch-header h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.switch-header h1 span {
+    color: #6366f1;
+}
+
+.switch-header > p:last-child {
+    color: #686e80;
+    font-size: 17px;
+}
+
+
+/* Input */
+
+.switch-input-card {
+    background: #ffffff;
+    border: 1px solid #e5e6ed;
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    border: 1px solid #dfe1e8;
+    border-radius: 9px;
+    padding: 14px;
+    background: #ffffff;
+    color: #151827;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #6366f1;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.input-group small {
+    display: block;
+    margin-top: 7px;
+    color: #858a98;
+    font-size: 12px;
+}
+
+.switch-input-card button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* Results */
+
+.switch-results {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-heading h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.result-heading > p:last-child {
+    color: #686e80;
+}
+
+
+/* Career cards */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.career-card {
+    background: #ffffff;
+    border: 1px solid #e5e6ed;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.career-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.career-card h3 {
+    font-size: 20px;
+}
+
+.match-score {
+    font-size: 13px;
+    font-weight: 800;
+    color: #6366f1;
+    white-space: nowrap;
+}
+
+.career-card p {
+    color: #686e80;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.transfer-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.transfer-skill {
+    padding: 6px 9px;
+    background: #f0f1f6;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* Responsive */
+
+@media (max-width: 750px) {
+
+    .switch-container {
+        padding: 50px 5%;
+    }
+
+    .switch-input-card {
+        padding: 24px;
+    }
+
+    .career-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-card-header {
+        flex-direction: column;
+    }
+}

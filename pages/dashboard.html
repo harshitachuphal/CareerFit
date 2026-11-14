@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerFit | Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            CareerFit
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="skill-analysis.html">Skill Analysis</a>
+            <a href="career-switch.html">Career Switch</a>
+            <a href="roadmap.html">Roadmap</a>
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <!-- Welcome -->
+        <section class="dashboard-header">
+
+            <p class="page-label">
+                CAREERFIT DASHBOARD
+            </p>
+
+            <h1>
+                Your career,
+                <span>at a glance.</span>
+            </h1>
+
+            <p>
+                Track your readiness, skill gaps and personalized
+                career roadmap from one place.
+            </p>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="dashboard-stats">
+
+            <div class="dashboard-card">
+
+                <p class="card-label">
+                    TARGET CAREER
+                </p>
+
+                <h2 id="dashboardRole">
+                    —
+                </h2>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <p class="card-label">
+                    READINESS
+                </p>
+
+                <h2 id="dashboardScore">
+                    —
+                </h2>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <p class="card-label">
+                    SKILL GAPS
+                </p>
+
+                <h2 id="dashboardGaps">
+                    —
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main Actions -->
+        <section class="dashboard-actions">
+
+            <div class="dashboard-action-card">
+
+                <div>
+
+                    <p class="card-label">
+                        ANALYZE
+                    </p>
+
+                    <h2>
+                        Find your skill gaps
+                    </h2>
+
+                    <p>
+                        Compare your current skills with the
+                        skills demanded for your target career.
+                    </p>
+
+                </div>
+
+                <a
+                    href="skill-analysis.html"
+                    class="dashboard-button"
+                >
+                    Skill Analysis →
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-action-card">
+
+                <div>
+
+                    <p class="card-label">
+                        PLAN
+                    </p>
+
+                    <h2>
+                        Build your roadmap
+                    </h2>
+
+                    <p>
+                        Get a prioritized learning path based
+                        on market-demanded skills.
+                    </p>
+
+                </div>
+
+                <a
+                    href="roadmap.html"
+                    class="dashboard-button"
+                >
+                    View Roadmap →
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-action-card">
+
+                <div>
+
+                    <p class="card-label">
+                        EXPLORE
+                    </p>
+
+                    <h2>
+                        Discover career switches
+                    </h2>
+
+                    <p>
+                        Find alternative careers where your
+                        existing skills can transfer.
+                    </p>
+
+                </div>
+
+                <a
+                    href="career-switch.html"
+                    class="dashboard-button"
+                >
+                    Explore Careers →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Analysis -->
+        <section
+            id="dashboardEmpty"
+            class="dashboard-empty"
+        >
+
+            <h2>
+                Start your CareerFit journey
+            </h2>
+
+            <p>
+                Complete a Skill Analysis to see your
+                personalized career information here.
+            </p>
+
+            <a
+                href="skill-analysis.html"
+                class="btn primary-btn"
+            >
+                Analyze My Skills
+            </a>
+
+        </section>
+
+
+        <section
+            id="dashboardProfile"
+            class="dashboard-profile hidden"
+        >
+
+            <div class="profile-header">
+
+                <div>
+
+                    <p class="card-label">
+                        YOUR PROFILE
+                    </p>
+
+                    <h2>
+                        Career readiness overview
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <div class="profile-box">
+
+                    <span>
+                        Matched Skills
+                    </span>
+
+                    <strong id="matchedCount">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-box">
+
+                    <span>
+                        Missing Skills
+                    </span>
+
+                    <strong id="missingCount">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-box">
+
+                    <span>
+                        Readiness Score
+                    </span>
+
+                    <strong id="profileScore">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+            <!-- Readiness Chart -->
+
+<div class="chart-card">
+
+    <p class="card-label">
+        CAREER READINESS
+    </p>
+
+    <h2>
+        Your Readiness Overview
+    </h2>
+
+    <p class="chart-description">
+        Your current readiness for the selected career.
+    </p>
+
+    <div class="dashboard-chart-container">
+        <canvas id="readinessChart"></canvas>
+    </div>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 CareerFit</p>
+    </footer>
+
+
+    <script src="../js/data.js"></script>
+<script src="../js/charts.js"></script>
+<script src="../js/dashboard.js"></script>
+<script src="../js/app.js"></script>
+
+</body>
+
+</html>

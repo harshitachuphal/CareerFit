@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerFit | Career Switch</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/career-switch.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            CareerFit
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="skill-analysis.html">Skill Analysis</a>
+            <a href="career-switch.html">Career Switch</a>
+            <a href="roadmap.html">Roadmap</a>
+        </nav>
+
+    </header>
+
+
+    <main class="switch-container">
+
+        <!-- Header -->
+        <section class="switch-header">
+
+            <p class="page-label">
+                CAREER SWITCH ANALYSIS
+            </p>
+
+            <h1>
+                See where your
+                <span>skills can take you.</span>
+            </h1>
+
+            <p>
+                Discover alternative career paths where your
+                existing skills already give you an advantage.
+            </p>
+
+        </section>
+
+
+        <!-- Input -->
+        <section class="switch-input-card">
+
+            <div class="input-group">
+
+                <label for="currentRole">
+                    Current / Target Role
+                </label>
+
+                <select id="currentRole">
+
+                    <option value="">
+                        Select your current role
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="switchSkills">
+                    Your Current Skills
+                </label>
+
+                <textarea
+                    id="switchSkills"
+                    rows="5"
+                    placeholder="Example: HTML, CSS, JavaScript, SQL"
+                ></textarea>
+
+                <small>
+                    Enter skills separated by commas.
+                </small>
+
+            </div>
+
+
+            <button
+                id="findCareerBtn"
+                class="btn primary-btn"
+                type="button"
+            >
+                Find Alternative Careers
+            </button>
+
+        </section>
+
+
+        <!-- Results -->
+        <section
+            id="switchResults"
+            class="switch-results hidden"
+        >
+
+            <div class="result-heading">
+
+                <p class="card-label">
+                    CAREER OPPORTUNITIES
+                </p>
+
+                <h2>
+                    Careers matching your skill profile
+                </h2>
+
+                <p>
+                    These roles are ranked by how closely
+                    your current skills match their market demand.
+                </p>
+
+            </div>
+
+
+            <div
+                id="careerRecommendations"
+                class="career-grid"
+            >
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 CareerFit</p>
+    </footer>
+
+
+    <script src="../js/data.js"></script>
+    <script src="../js/careerSwitch.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
